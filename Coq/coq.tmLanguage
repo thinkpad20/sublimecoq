@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>v</string>
+	</array>
+	<key>name</key>
+	<string>Coq</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Inductive type definition</string>
+			<key>match</key>
+			<string>Inductive</string>
+			<key>name</key>
+			<string>storage.type.inductive</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Function or other value definition</string>
+			<key>match</key>
+			<string>Definition|Fixpoint</string>
+			<key>name</key>
+			<string>storage.type.value</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Class or instance definition</string>
+			<key>match</key>
+			<string>Class|Instance</string>
+			<key>name</key>
+			<string>storage.type.class</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Theorem definition</string>
+			<key>match</key>
+			<string>Lemma|Theorem|Example|Remark</string>
+			<key>name</key>
+			<string>storage.type.theorem</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Vernacular command</string>
+			<key>match</key>
+			<string>Proof|Qed|Eval|Require|Import|Parameter</string>
+			<key>name</key>
+			<string>keyword.control.vernacular</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Commonly used tactics.</string>
+			<key>match</key>
+			<string>intros|induction|apply|destruct|split|reflexivity|rewrite|assert|replace|simpl</string>
+			<key>name</key>
+			<string>keyword.other.tactic</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Gallina keyword</string>
+			<key>match</key>
+			<string>match|with|end|let|in|as|fun|forall|exists</string>
+			<key>name</key>
+			<string>keyword.control.gallina</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Reserved symbols</string>
+			<key>match</key>
+			<string>:=|=&gt;|-&gt;|:|\.|,</string>
+			<key>name</key>
+			<string>punctuation.definition</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Built-in primitive types.</string>
+			<key>match</key>
+			<string>Type|Prop|Set</string>
+			<key>name</key>
+			<string>support.type.coq</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>A symbol</string>
+			<key>match</key>
+			<string>[+-/\*=%$^:.&gt;&lt;]+</string>
+			<key>name</key>
+			<string>keyword.operator.other</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>An identifier starting in caps. Probably a type or constructor.</string>
+			<key>match</key>
+			<string>[A-Z][a-zA-Z0-9_]*</string>
+			<key>name</key>
+			<string>variable.other.typeorconstructor</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>An identifier. Declared here so that we don't scoop up numbers.</string>
+			<key>match</key>
+			<string>[a-zA-Z][a-zA-Z0-9_]*</string>
+			<key>name</key>
+			<string>other.variable</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>A number</string>
+			<key>match</key>
+			<string>\d+</string>
+			<key>name</key>
+			<string>constant.number</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.coq</string>
+	<key>uuid</key>
+	<string>deadbeef-5aac-4b6f-8071-1aadb970b8d9</string>
+</dict>
+</plist>

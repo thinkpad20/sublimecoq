@@ -1,0 +1,59 @@
+# Syntax definition for some stupid language
+---
+name: Coq
+scopeName: source.coq
+fileTypes: [v]
+uuid: deadbeef-5aac-4b6f-8071-1aadb970b8d9
+
+patterns:
+- comment: Inductive type definition
+  name: storage.type.inductive
+  match: Inductive
+
+- comment: Function or other value definition
+  name: storage.type.value
+  match: Definition|Fixpoint
+
+- comment: Class or instance definition
+  name: storage.type.class
+  match: Class|Instance
+
+- comment: Theorem definition
+  name: storage.type.theorem
+  match: Lemma|Theorem|Example|Remark
+
+- comment: Vernacular command
+  name: keyword.control.vernacular
+  match: Proof|Qed|Eval|Require|Import|Parameter
+
+- comment: Commonly used tactics.
+  name: keyword.other.tactic
+  match: intros|induction|apply|destruct|split|reflexivity|rewrite|assert|replace|simpl
+
+- comment: Gallina keyword
+  name: keyword.control.gallina
+  match: match|with|end|let|in|as|fun|forall|exists
+
+- comment: Reserved symbols
+  name: punctuation.definition
+  match: ':=|=>|->|:|\.|,'
+
+- comment: Built-in primitive types.
+  name: support.type.coq
+  match: Type|Prop|Set
+
+- comment: A symbol
+  name: keyword.operator.other
+  match: '[+-/\*=%$^:.><]+'
+
+- comment: An identifier starting in caps. Probably a type or constructor.
+  name: variable.other.typeorconstructor
+  match: '[A-Z][a-zA-Z0-9_]*'
+
+- comment: An identifier. Declared here so that we don't scoop up numbers.
+  name: other.variable
+  match: '[a-zA-Z][a-zA-Z0-9_]*'
+
+- comment: A number
+  name: constant.number
+  match: '\d+'
